@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Study Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul ul {
+            margin-top: 5px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>C++ Study Guide</h1>
+
+    <h2>1. C++ Basics</h2>
+    <ul>
+        <li>Algorithm
+            <ul>
+                <li>A step-by-step procedure or formula for solving a problem</li>
+            </ul>
+        </li>
+        <li>Types of errors:
+            <ul>
+                <li>Syntax: Errors in the structure of the code</li>
+                <li>Runtime: Errors that occur during program execution</li>
+                <li>Logic: Errors in the program's logic or design</li>
+            </ul>
+        </li>
+        <li>ASCII Table
+            <ul>
+                <li>A character encoding standard for electronic communication</li>
+                <li>Used to represent text in computers and other devices</li>
+            </ul>
+        </li>
+        <li>Language types:
+            <ul>
+                <li>Machine language: Binary code directly executed by the computer</li>
+                <li>Assembly: Low-level programming language with a strong correspondence to machine code instructions</li>
+                <li>High-Level: More abstract languages that are easier for humans to read and write (e.g., C++, Python)</li>
+            </ul>
+        </li>
+        <li>Software life cycle steps
+            <ul>
+                <li>Typically includes: Analyze the problem, Design, Implementation, Testing, Deployment, and Maintenance</li>
+            </ul>
+        </li>
+        <li>Variable declaration, initialization, and assignment
+            <ul>
+                <li>Declaration: Specifying a variable's type (e.g., <code>int x;</code>)</li>
+                <li>Initialization: Giving a variable its first value (e.g., <code>int x = 5;</code>)</li>
+                <li>Assignment: Changing a variable's value (e.g., <code>x = 10;</code>)</li>
+            </ul>
+        </li>
+        <li>Valid variable naming conventions
+            <ul>
+                <li>Can include letters, digits, and underscores</li>
+                <li>Must start with a letter or underscore</li>
+                <li>Case-sensitive</li>
+                <li>Cannot use C++ keywords</li>
+            </ul>
+        </li>
+        <li>Purpose and usage of <code>#include</code>
+            <ul>
+                <li>Preprocessor directive that includes the contents of another file in the current file</li>
+                <li>Used to include header files containing function declarations and definitions</li>
+            </ul>
+        </li>
+         <li>Common operators:
+            <ul>
+                <li><code>=</code>: Assignment operator</li>
+                <li><code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code>: Compound assignment operators</li>
+                <li><code>++</code>, <code>--</code>: Increment and decrement operators</li>
+                <li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>: Arithmetic operators</li>
+                <li><code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>: Comparison operators</li>
+                <li><code>&amp;&amp;</code>, <code>||</code>, <code>!</code>: Logical operators</li>
+                <li><code>&amp;</code>, <code>|</code>, <code>^</code>, <code>~</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>: Bitwise operators</li>
+                <li><code>?:</code>: Ternary conditional operator</li>
+                <li><code>,</code>: Comma operator</li>
+                <li><code>sizeof</code>: Size-of operator</li>
+                <li><code>&amp;</code>, <code>*</code>: Address-of and dereference operators</li>
+            </ul>
+        </li>
+        <li>Difference between <code>=</code> and <code>==</code>
+            <ul>
+                <li><code>=</code> is for assignment</li>
+                <li><code>==</code> is for comparison (equality check)</li>
+            </ul>
+        </li>
+        <li>Type casting in C++
+            <ul>
+                <li>Converting one data type to another</li>
+                <li>Example: <code>static_cast&lt;int&gt;(doubleValue)</code></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Linux/Git Commands</h2>
+    <ul>
+        <li><code>cp</code>: Copy files and directories</li>
+        <li><code>ls</code>: List directory contents</li>
+        <li><code>rm</code>: Remove files or directories</li>
+        <li><code>mv</code>: Move or rename files and directories</li>
+        <li><code>touch</code>: Create empty files or update file timestamps</li>
+        <li><code>mkdir</code>: Create directories</li>
+        <li><code>cd</code>: Change directory</li>
+        <li>Git commands:
+            <ul>
+                <li><code>clone</code>: Create a copy of a remote repository</li>
+                <li><code>status</code>: Show the working tree status</li>
+                <li><code>commit</code>: Record changes to the repository</li>
+                <li><code>add</code>: Add file contents to the index</li>
+                <li><code>push</code>: Update remote refs along with associated objects</li>
+                <li><code>pull</code>: Fetch from and integrate with another repository or a local branch</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. Flow Control</h2>
+    <ul>
+        <li>Modulus operator: <code>%</code>
+            <ul>
+                <li>Returns the remainder of a division operation</li>
+            </ul>
+        </li>
+        <li>Logical AND: <code>&&</code>
+            <ul>
+                <li>Returns true if both operands are true</li>
+            </ul>
+        </li>
+        <li>Logical OR: <code>||</code>
+            <ul>
+                <li>Returns true if at least one operand is true</li>
+            </ul>
+        </li>
+        <li>Equality operator: <code>==</code>
+            <ul>
+                <li>Checks if two values are equal</li>
+            </ul>
+        </li>
+        <li>Short circuit evaluation
+            <ul>
+                <li>Stops evaluating a logical expression as soon as the result is determined</li>
+            </ul>
+        </li>
+        <li>For loops vs. While loops: Usage scenarios
+            <ul>
+                <li>For loops: Used when the number of iterations is known</li>
+                <li>While loops: Used when the number of iterations is unknown</li>
+            </ul>
+        </li>
+        <li>Loop control variables and scope
+            <ul>
+                <li>Variables declared in the loop have local scope</li>
+                <li>Variables declared outside the loop have broader scope</li>
+            </ul>
+        </li>
+        <li>Types of loops: for, while, do-while, infinite loops
+            <ul>
+                <li>For: Executes a specified number of times</li>
+                <li>While: Executes as long as a condition is true</li>
+                <li>Do-while: Executes at least once, then continues while a condition is true</li>
+                <li>Infinite: Loops that don't have a termination condition</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>4. Variable Scope and Lifecycle</h2>
+    <ul>
+        <li>Local vs. global variables
+            <ul>
+                <li>Local: Limited to the block where they are declared</li>
+                <li>Global: Accessible throughout the entire program</li>
+            </ul>
+        </li>
+        <li>Variable initialization and default values
+            <ul>
+                <li>Uninitialized variables may contain garbage values</li>
+                <li>Best practice: Always initialize variables</li>
+            </ul>
+        </li>
+        <li>Lifecycle of variables in different contexts
+            <ul>
+                <li>Variables in loops: Created and destroyed with each iteration (if declared inside)</li>
+                <li>Function parameters: Exist for the duration of the function call</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>5. Best Practices and Common Pitfalls</h2>
+    <ul>
+        <li>Proper variable naming and conventions
+            <ul>
+                <li>Use descriptive names</li>
+                <li>Follow consistent naming conventions (e.g., camelCase or snake_case)</li>
+            </ul>
+        </li>
+        <li>Avoiding unintended behavior in loops
+            <ul>
+                <li>Be careful with loop counters and termination conditions</li>
+                <li>Watch out for off-by-one errors</li>
+            </ul>
+        </li>
+        <li>Proper use of assignment vs. equality operators
+            <ul>
+                <li>Use <code>=</code> for assignment, <code>==</code> for comparison</li>
+                <li>Common mistake: Using <code>=</code> in conditional statements</li>
+            </ul>
+        </li>
+        <li>Understanding variable scope and its implications
+            <ul>
+                <li>Be aware of where variables are accessible</li>
+                <li>Avoid naming conflicts between local and global variables</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
